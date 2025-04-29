@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Livros</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <form id="formulario">
+        <h1>Cadastro de livros</h1>
+
+        <div id="inputs">
+            <label for="titulo">Título</label>
+            <input class="campo" id="titulo" placeholder="Escreva o título do livro..." type="text" required>
+
+            <label for="autor">Autor</label>
+            <input class="campo" id="autor" placeholder="Escreva o autor do livro..." type="text" required>
+
+            <label for="data">Data de publicação</label>
+            <input class="campo" id="data" type="number" required>
+
+            <label for="genero">Gênero</label>
+            <input class="campo" id="genero" placeholder="Escreva o gênero do livro..." type="text" required>
+
+            <label for="Resumo">Resumo</label>
+            <textarea class="campo" id="Resumo" placeholder="Escreva um resumo do livro..." required></textarea>
+
+            <button id="botao">Concluir</button>
+        </div>
+    </form>
+
+    <h1>Livros cadastrados:</h1>
+    <div id="cardsContainer"></div>
+
+    <script src="./bla.js"></script>
+</body>
+</html>
